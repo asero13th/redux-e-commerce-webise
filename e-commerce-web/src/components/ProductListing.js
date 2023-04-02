@@ -9,7 +9,7 @@ const ProductListing = () => {
     const products = useSelector((state) => state)
     useFetchApi(BASE_URL)
   return (
-    <div className="ui grid container">
+    <div className="ui grid container  mt-5">
         <ProductComponent />
     </div>
   )
