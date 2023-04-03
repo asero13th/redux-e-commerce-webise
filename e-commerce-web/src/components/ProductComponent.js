@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 const ProductComponent = () => {
     const products = useSelector((state) => state.allProduct.products)
+    console.log(products)
     const renderList = products.map((product) => {
         const { id, title, image, price, category } = product;
         return (
